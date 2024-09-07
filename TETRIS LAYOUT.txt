@@ -1,0 +1,41 @@
+TETRIS LAYOUT:
+- Play field : 10x40; 20 upper rows are hidden\
+- Color : 	
+		+ Cyan I
+		+ Yellow O
+		+ Purple T
+		+ Green S
+		+ Red Z
+		+Blue J
+		+ Orange L
+- Spawn:
+		+ The I and O spawn in the middle columns
+		+ The rest spawn in the left-middle columns
+		+ The tetriminoes spawn horizontally with J, L and T spawning flat-side first.
+		+ Spawn above playfield, row 21 for I, and 21/22 for all other tetriminoes.
+		+ Immediately drop one space if no existing Block is in its path
+		+ Use random generator: https://tetris.fandom.com/wiki/Random_Generator 
+- Rotation and Movement:
+		+ https://tetris.fandom.com/wiki/SRS 
+- Standard mapping for computer:
+		+ Up arrow and X are to rotate 90° clockwise.
+		+ Space to hard drop.
+		+ Shift and C are to hold.
+		+ Ctrl and Z are to rotate 90° counterclockwise.
+		+ Esc and F1 are to pause.
+		+ Left, right, and down arrows are the same as on the console.
+		+ Number pad controls:
+			~ 0 is to hold.
+			~ 8, 4, 6, and 2 are hard drop, left shift, right shift, and soft drop respectively.
+			~1, 5, and 9 are to rotate 90° clockwise.
+			~ 3 and 7 are to rotate 90° counterclockwise.
+- Delete a finished line and score
+- Scoring: https://tetris.fandom.com/wiki/Scoring#Guideline_scoring_system
+- Ghost piece: https://tetris.fandom.com/wiki/Ghost_piece 
+- Showing next 6 pieces
+- Uses half second lock delay: https://tetris.fandom.com/wiki/Lock_delay 
+- The player tops out when a piece is spawned overlapping at least one block (block out), or a piece locks completely above the visible portion of the playfield (lock out): https://tetris.fandom.com/wiki/Top_out
+- Speed curve: https://tetris.fandom.com/wiki/Tetris_Worlds
+- Game must count down from 3 after you press start, and after you resume a paused game.
+- Use a variant of Roger Dean's Tetris logo
+
